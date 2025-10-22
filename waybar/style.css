@@ -1,0 +1,71 @@
+* {
+  font-family: "JetBrainsMono Nerd Font", "FiraCode Nerd Font", monospace;
+  font-size: 14px;
+  border: none;
+}
+
+window#waybar {
+  background: rgba(20, 20, 30, 0.35); /* leve transparência */
+  border-bottom: 1px solid rgba(120, 60, 160, 0.3);
+  color: #ddd;
+}
+
+/* Workspaces */
+#workspaces button {
+  padding: 4px 8px;
+  margin: 2px 3px;
+  border-radius: 6px;
+  background: rgba(40, 30, 50, 0.5);
+  color: #bbb;
+}
+#workspaces button.active {
+  background: rgba(120, 60, 160, 0.6);
+  color: #fff;
+}
+#workspaces button:hover {
+  background: rgba(120, 60, 160, 0.4);
+  color: #fff;
+}
+
+/* Clock central */
+#clock {
+  font-weight: 600;
+  color: #e0d0ff;
+  padding: 4px 14px;
+  border-radius: 8px;
+  background: rgba(40, 20, 70, 0.4);
+}
+
+#cava {
+  color: #c0a0ff;
+  padding: 0px 10px;
+  margin-left: 8px;
+  border-radius: 8px;
+  background: rgba(30, 20, 60, 0.4);
+}
+
+/* Módulos à direita */
+#pulseaudio,
+#memory,
+#cpu,
+#temperature,
+#battery,
+#network,
+#tray {
+  padding: 4px 10px;
+  margin: 2px 3px;
+  border-radius: 8px;
+  background: rgba(30, 20, 40, 0.4);
+  color: #c0a0ff;
+  font-weight: 500;
+}
+
+/* Estados dinâmicos */
+#cpu.warning { color: #ffcc00; }
+#cpu.critical { color: #ff5555; }
+
+#battery.warning { color: #ffcc00; }
+#battery.critical { color: #ff5555; }
+#battery.charging { color: #80ff80; }
+
+#temperature.critical { color: #ff4444; }

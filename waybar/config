@@ -1,0 +1,100 @@
+{
+  "layer": "top",
+  "position": "top",
+  "height": 28,
+  "margin-top": 4,
+  "margin-left": 6,
+  "margin-right": 6,
+
+  "modules-left": [
+    "hyprland/workspaces"
+  ],
+
+  "modules-center": [
+    "clock",
+    "cava"
+  ],
+
+  "modules-right": [
+    "pulseaudio",
+    "network",
+    "cpu",
+    "memory",
+    "temperature",
+    "battery",
+    "tray"
+  ],
+
+  "hyprland/workspaces": {
+    "disable-scroll": true,
+    "format": "{icon}",
+    "format-icons": {
+      "1": "",
+      "2": "",
+      "3": "",
+      "4": "",
+      "5": ""
+    }
+  },
+
+  "clock": {
+    "format": "{:%a %d %b  %H:%M}"
+  },
+
+  "cava": {
+    "framerate": 60,
+    "autosens": 1,
+    "bars": 10,
+    "method": "pipewire",
+    "source": "auto",
+    "format-icons": [
+      " ", "▂", "▃", "▄", "▅", "▆", "▇", "█", "█", "█", "█", "█", " "
+    ]
+  },
+
+  "pulseaudio": {
+    "format": " {volume}%",
+    "format-muted": " {volume}%"
+  },
+
+  "memory": {
+    "format": " {used:0.01f}GB"
+  },
+
+  "cpu": {
+    "format": " {usage}%",
+    "states": {
+      "warning": 60,
+      "critical": 85
+    }
+  },
+
+  "temperature": {
+    "critical-threshold": 80,
+    "format": " {temperatureC}°C"
+  },
+
+  "battery": {
+    "format": "{icon} {capacity}%",
+    "format-charging": " {capacity}%",
+    "states": {
+      "warning": 30,
+      "critical": 15
+    },
+    "format-icons": [
+      "", "", "", "", ""
+    ]
+  },
+
+  "network": {
+    "format-wifi": " {signalStrength}%",
+    "format-ethernet": " {ifname}",
+    "format-disconnected": ""
+  },
+
+  "tray": {
+    "icon-size": 16,
+    "spacing": 8
+  }
+}
+
