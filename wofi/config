@@ -1,0 +1,8 @@
+width=500
+height=550
+prompt=Search:
+show_icons=true
+image_size=32
+hide_scroll=true
+location=center
+icon_theme=Papirus
